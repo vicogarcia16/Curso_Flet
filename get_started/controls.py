@@ -1,10 +1,17 @@
 import flet as ft
 import asyncio
 
-async def main(page: ft.Page):
+def config_page (page: ft.Page):
     page.window.width = 400
     page.window.height = 800
     page.window.resizable = False
+    page.vertical_alignment = ft.MainAxisAlignment.CENTER
+    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
+    page.expand = True
+    return page
+
+async def main(page: ft.Page):
+    page = config_page(page)
     
     # Función para cerrar la ventana
     def close_page(e):
@@ -25,10 +32,7 @@ async def main(page: ft.Page):
                 ft.Container(content=label, alignment=ft.alignment.center),
                 ft.Container(content=progress_bar, alignment=ft.alignment.center),
                 ft.Container(content=cancel_button, alignment=ft.alignment.center)
-                ],
-            alignment=ft.MainAxisAlignment.CENTER,
-            horizontal_alignment=ft.CrossAxisAlignment.CENTER,
-            expand=True
+                ]
         )
     )
 
