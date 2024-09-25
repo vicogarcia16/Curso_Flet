@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flet = "*"
+
+[dev-packages]
+
+[scripts]
+counter = "flet run demo-contador/counter.py"
+counter_web = "flet run --web demo-contador/counter.py"
+controls = "flet run get_started/controls.py"
+
+[requires]
+python_version = "3.11"
