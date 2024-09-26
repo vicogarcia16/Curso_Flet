@@ -1,19 +1,10 @@
 import flet as ft
 import asyncio
-
-def config_page (page: ft.Page):
-    page.window.width = 400
-    page.window.height = 800
-    page.window.resizable = False
-    page.vertical_alignment = ft.MainAxisAlignment.CENTER
-    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
-    page.expand = True
-    return page
+from config import config_page
 
 async def main(page: ft.Page):
     page = config_page(page)
     
-    # Función para cerrar la ventana
     def close_page(e):
         page.window.close()
 
