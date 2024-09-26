@@ -12,6 +12,7 @@ flet = "*"
 counter = "flet run demo-contador/counter.py"
 counter_web = "flet run --web demo-contador/counter.py"
 controls = "flet run get_started/controls.py"
+container = "flet run get_started/container.py"
 
 [requires]
 python_version = "3.11"
