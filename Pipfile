@@ -16,6 +16,7 @@ container = "flet run get_started/container.py"
 saludo = "flet run get_started/gretting.py"
 todo = "flet run get_started/todo.py"
 todo_web = "flet run --web get_started/todo.py"
+control_ref = "flet run get_started/control_ref.py"
 
 [requires]
 python_version = "3.11"
