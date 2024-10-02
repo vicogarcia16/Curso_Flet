@@ -19,6 +19,9 @@ todo_web = "flet run --web get_started/todo.py"
 control_ref = "flet run get_started/control_ref.py"
 control_ref_1 = "flet run get_started/control_ref_Ref.py"
 text = "flet run displaying-data/text.py"
+greeter = "flet run displaying-data/greeter.py"
+checkbox = "flet run displaying-data/checkbox.py"
+dropdown = "flet run displaying-data/dropdown.py"
 
 [requires]
 python_version = "3.11"
